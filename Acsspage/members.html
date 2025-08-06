@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Members Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="members.css" />
+    <div id="acsslink">
+      <h2>ARMY CANTONMENT SECONDARY SCHOOL</h2>
+      <h4>CLASS OF '94</h4>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">About</a>
+        <a
+          class="nav-link active text-dark"
+          aria-current="page"
+          href="members.html"
+          style="background-color: rgb(255, 255, 255)"
+          >Members</a
+        >
+        <div class="dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >Blog <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="news.html">News & Updates</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="achievements.html">Achievements</a>
+            </li>
+          </ul>
+        </div>
+        <a class="nav-link" href="donations.html">Donations</a>
+        <a class="nav-link" href="calendar.html">Calendar</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <!-- MOBILE TOGGLE BUTTON (Only Visible on Mobile) -->
+      <div class="mobbar">
+        <button
+          class="btn btn-dark d-lg-none mobile-nav"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileSidebar"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- SIDEBAR (Mobile View) -->
+      <div
+        class="offcanvas offcanvas-start bg-dark text-white"
+        id="mobileSidebar"
+      >
+        <div class="offcanvas-header">
+ 
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li><a class="nav-link text-white" href="index.html">About</a></li>
+            <li>
+              <a class="nav-link text-white" href="members.html">Members</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Blog</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="news.html">News & Updates</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="achievements.html"
+                    >Achievements</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="donations.html">Donations</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="calendar.html">Calendar</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </head>
+  <body>
+    <div class="container text-center text-light py-4">
+      <h2 class="fw-bold text-dark">MEMBERS</h2>
+      <hr class="mx-auto w-50 border-dark" />
+      <p class="fst-italic text-dark">view the members of the graduating class</p>
+    </div>
+    <br /><br />
+    <input
+      type="text"
+      id="searchInput"
+      class="form-control mb-3"
+      placeholder="Search members..."
+    />
+
+    <div class="container py-4">
+      <!-- Grid Container -->
+      <div class="row" id="cardContainer">
+        <!-- Sample Cards -->
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Onyendinazu-Stella"
+          data-position="President"
+        >
+          <div class="card">
+            <img src="Site_images\stellaprofile2.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Onyendinazu</p>
+            <p><strong>OTHER NAMES</strong><br />Stella</p>
+            <p><strong>POSITION</strong><br />President</p>
+            <p><strong>OCCUPATION</strong><br />Travel Consultant</p>
+            <p><strong>CONTACT INFO</strong><br />09098900020</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Ewewie-Emmanuel"
+          data-position="vice-president"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250202-WA0080.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Ewewie</p>
+            <p><strong>OTHER NAMES</strong><br />Emmanuel</p>
+            <p><strong>POSITION</strong><br />Vice President</p>
+            <p><strong>OCCUPATION</strong><br />Mechanical Engineer</p>
+            <p><strong>CONTACT INFO</strong><br />08033341246</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Ganiyu-Saheed"
+          data-position="Secretary"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250114-WA0019.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Ganiyu</p>
+            <p><strong>OTHER NAMES</strong><br />Saheed</p>
+            <p><strong>POSITION</strong><br />Secretary</p>
+            <p>
+              <strong>OCCUPATION</strong><br />Building Materials/Contractor
+            </p>
+            <p><strong>CONTACT INFO</strong><br />08034255261</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Francis-Oluyaemisi"
+          data-position="Treasurer"
+        >
+          <div class="card">
+            <img src="Site_images\IMG-20250202-WA0072.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Francis</p>
+            <p><strong>OTHER NAMES</strong><br />Oluwayemisi</p>
+            <p><strong>POSITION</strong><br />Treasurer</p>
+            <p><strong>OCCUPATION</strong><br />-</p>
+            <p><strong>CONTACT INFO</strong><br />08022594433</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Saidi-Adeleke"
+          data-position="Secretary-Assistant"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250202-WA0059.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Saidi</p>
+            <p><strong>OTHER NAMES</strong><br />Adeleke</p>
+            <p><strong>POSITION</strong><br />Assistant Secretary</p>
+            <p><strong>OCCUPATION</strong><br />Guiness Nig. Ltd.</p>
+            <p><strong>CONTACT INFO</strong><br />07030342368</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Peter-Patrick-Enekhu"
+          data-position="Technical-Adviser"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250202-WA0076.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Peter</p>
+            <p><strong>OTHER NAMES</strong><br />Patrick Enekhu</p>
+            <p><strong>POSITION</strong><br />Technical Adviser</p>
+            <p>
+              <strong>OCCUPATION</strong><br />Statistician/Database Analyst
+            </p>
+            <p><strong>CONTACT INFO</strong><br />08023610903</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Segun-Akinbami-Lovynna"
+          data-position="Welfare"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250202-WA0083.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Segun-Akinbanmi</p>
+            <p><strong>OTHER NAMES</strong><br />Lovynna</p>
+            <p><strong>POSITION</strong><br />Welfare</p>
+            <p><strong>OCCUPATION</strong><br />Business</p>
+            <p><strong>CONTACT INFO</strong><br />08038038634</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Gbenga-Oyekan"
+          data-position="PRO"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250202-WA0061.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Gbenga</p>
+            <p><strong>OTHER NAMES</strong><br />Oyekan</p>
+            <p><strong>POSITION</strong><br />PRO</p>
+            <p>
+              <strong>OCCUPATION</strong><br />POLITICIAN & CEO Barclays Bar.
+            </p>
+            <p><strong>CONTACT INFO</strong><br />08023317660</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Egbeola-Olawale-Martins
+        "
+          data-position="Member"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250202-WA0065.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Egbeola</p>
+            <p><strong>OTHER NAMES</strong><br />Olawale Martins</p>
+            <p><strong>POSITION</strong><br />Member</p>
+            <p>
+              <strong>OCCUPATION</strong><br />Business Development Consulting
+            </p>
+            <p><strong>CONTACT INFO</strong><br />08033829035</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Zainab-Rasheed
+      "
+          data-position="Member"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250202-WA0064.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Zainab</p>
+            <p><strong>OTHER NAMES</strong><br />Rasheed</p>
+            <p><strong>POSITION</strong><br />Member</p>
+            <p><strong>OCCUPATION</strong><br />-</p>
+            <p><strong>CONTACT INFO</strong><br />09047824647</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Emily-Gift-Edem"
+          data-position="Member"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250202-WA0060.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Emily</p>
+            <p><strong>OTHER NAMES</strong><br />Gift Edem</p>
+            <p><strong>POSITION</strong><br />Member</p>
+            <p><strong>OCCUPATION</strong><br />-</p>
+            <p><strong>CONTACT INFO</strong><br />08062982675</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Oloyede-Tajudeen"
+          data-position="Member"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250202-WA0068.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Oloyede</p>
+            <p><strong>OTHER NAMES</strong><br />Tajudeen</p>
+            <p><strong>POSITION</strong><br />Member</p>
+            <p><strong>OCCUPATION</strong><br />-</p>
+            <p><strong>CONTACT INFO</strong><br />08038203110</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Asemota-Emmanuel"
+          data-position="Member"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250114-WA0028.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Asemota</p>
+            <p><strong>OTHER NAMES</strong><br />Emmanuel</p>
+            <p><strong>POSITION</strong><br />Member</p>
+            <p><strong>OCCUPATION</strong><br />Works at DHQ</p>
+            <p><strong>CONTACT INFO</strong><br />08111811930</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Solomon-Edet-Akpan"
+          data-position="Member"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250202-WA0071.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Solomon</p>
+            <p><strong>OTHER NAMES</strong><br />Edet Akpan</p>
+            <p><strong>POSITION</strong><br />Member</p>
+            <p>
+              <strong>OCCUPATION</strong><br />Property Consultant / Accounting
+            </p>
+            <p><strong>CONTACT INFO</strong><br />08168008412</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Bami-Douglas-David"
+          data-position="Member"
+        >
+          <div class="card">
+            <img
+              src="Site_images/WhatsApp Image 2025-01-14 at 11.40.48_7cceece3.jpg"
+              alt="Profile"
+            />
+            <p><strong>SURNAME</strong><br />Bami</p>
+            <p><strong>OTHER NAMES</strong><br />Douglas David</p>
+            <p><strong>POSITION</strong><br />Member</p>
+            <p><strong>OCCUPATION</strong><br />-</p>
+            <p><strong>CONTACT INFO</strong><br />08036676441</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Rose-Omo-Ukazu"
+          data-position="Member"
+        >
+          <div class="card">
+            <img src="Site_images/IMG-20250202-WA0081.jpg" alt="Profile" />
+            <p><strong>SURNAME</strong><br />Rose</p>
+            <p><strong>OTHER NAMES</strong><br />Omo Ukazu</p>
+            <p><strong>POSITION</strong><br />Member</p>
+            <p><strong>OCCUPATION</strong><br />Business Woman</p>
+            <p><strong>CONTACT INFO</strong><br />-</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Macaulay-Godwin-Onoriode"
+          data-position="Member"
+        >
+          <div class="card">
+            <img
+              src="Site_images/WhatsApp Image 2025-02-09 at 21.41.21_898f2d81.jpg"
+              alt="Profile"
+            />
+            <p><strong>SURNAME</strong><br />Macaulay</p>
+            <p><strong>OTHER NAMES</strong><br />Godwin Onoriode</p>
+            <p><strong>POSITION</strong><br />Member</p>
+            <p><strong>OCCUPATION</strong><br />Electrical Engineer</p>
+            <p><strong>CONTACT INFO</strong><br />08038523894</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Raji-Ismaila"
+          data-position="Member"
+        >
+          <div class="card">
+            <img
+              src="Site_images/WhatsApp Image 2025-02-09 at 21.42.51_6fb8202f.jpg"
+              alt="Profile"
+            />
+            <p><strong>SURNAME</strong><br />Raji</p>
+            <p><strong>OTHER NAMES</strong><br />Ismaila</p>
+            <p><strong>POSITION</strong><br />Member</p>
+            <p><strong>OCCUPATION</strong><br />Soldier</p>
+            <p><strong>CONTACT INFO</strong><br />07037702885</p>
+          </div>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 card-item"
+          data-name="Ofonmbuk-Bassey"
+          data-position="Member"
+        >
+          <div class="card">
+            <img
+              src="Site_images/WhatsApp Image 2025-02-09 at 21.58.44_b79df653.jpg"
+              alt="Profile"
+            />
+            <p><strong>SURNAME</strong><br />Ofonmbuk</p>
+            <p><strong>OTHER NAMES</strong><br />Bassey</p>
+            <p><strong>POSITION</strong><br />Member</p>
+            <p>
+              <strong>OCCUPATION</strong><br />Sales and marketing Integrated
+              Dairies LTD
+            </p>
+            <p><strong>CONTACT INFO</strong><br />-</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer mt-auto">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Left Side -->
+          <div class="col-md-6 footer-left">
+            <h2 class="fw-light">ACSS</h2>
+            <h5 class="fw-light">CLASS OF '94</h5>
+            <p>TEL: 0906 021 6876, +234 802 259 4433, +234 802 361 0903</p>
+            <p>EMAIL: info@acssikeja94.org</p>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-md-6 footer-right">
+            <div class="text-center">
+              <h5 class="fw-light">SOCIALS</h5>
+              <div class="social-icons mt-3">
+                <a href="https://www.facebook.com/share/16D12kNBr8/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function sortCards() {
+        let container = document.getElementById("cardContainer");
+        let cards = Array.from(container.getElementsByClassName("card-item"));
+        let sortBy = document.getElementById("sortSelect").value;
+
+        cards.sort((a, b) => {
+          let textA = a.getAttribute("data-" + sortBy).toLowerCase();
+          let textB = b.getAttribute("data-" + sortBy).toLowerCase();
+          return textA.localeCompare(textB);
+        });
+
+        container.innerHTML = "";
+        cards.forEach((card) => container.appendChild(card));
+      }
+
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", function () {
+          let filter = this.value.toLowerCase();
+          let cards = document.querySelectorAll(".card-item");
+
+          cards.forEach((card) => {
+            let name = card.getAttribute("data-name").toLowerCase();
+            let position = card.getAttribute("data-position").toLowerCase();
+
+            if (name.includes(filter) || position.includes(filter)) {
+              card.style.display = "block";
+            } else {
+              card.style.display = "none";
+            }
+          });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

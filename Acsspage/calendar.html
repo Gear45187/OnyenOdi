@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Calendar</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calendar.css" />
+    <div id="acsslink">
+      <h2>ARMY CANTONMENT SECONDARY SCHOOL</h2>
+      <h4>CLASS OF '94</h4>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">About</a>
+        <a class="nav-link" href="members.html">Members</a>
+        <div class="dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >Blog <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="news.html">News & Updates</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="achievements.html">Achievements</a>
+            </li>
+          </ul>
+        </div>
+        <a class="nav-link" href="donations.html">Donations</a>
+        <a
+          class="nav-link active text-dark"
+          aria-current="page"
+          style="background-color: white"
+          href="calendar.html"
+          >Calendar</a
+        >
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <!-- MOBILE TOGGLE BUTTON (Only Visible on Mobile) -->
+      <div class="mobbar">
+        <button
+          class="btn btn-dark d-lg-none mobile-nav"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileSidebar"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- SIDEBAR (Mobile View) -->
+      <div
+        class="offcanvas offcanvas-start bg-dark text-white"
+        id="mobileSidebar"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li><a class="nav-link text-white" href="index.html">About</a></li>
+            <li>
+              <a class="nav-link text-white" href="members.html">Members</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Blog</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="news.html">News & Updates</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="achievements.html"
+                    >Achievements</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="donations.html">Donations</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="calendar.html">Calendar</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </head>
+  <body>
+    <div class="container text-center text-dark py-4">
+      <h2 class="fw-bold">CALENDAR</h2>
+      <hr class="mx-auto w-50 border-dark" />
+      <p class="fst-italic">view all upcoming events</p>
+    </div>
+    <div class="container border-dark">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="row g-0 custom-card">
+            <div class="col-md-5">
+              <div class="">
+                <div class="overflow-hidden">
+                  <video
+                    src="Site_images/WhatsApp Video 2025-02-20 at 20.18.22_a033fa67.mp4"
+                    autoplay
+                    muted
+                    loop
+                    style="width: 70%"
+                  ></video>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 d-flex justify-content-center custom-overlay">
+              <div class="event-txt text-dark">
+                <h2 class="fw-bold">Beach Bliss</h2>
+                <p class="mb-3">Coming Soon</p>
+                <p class="event-date text-dark-emphasis">26th April 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <br />
+    <footer class="footer mt-auto">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Left Side -->
+          <div class="col-md-6 footer-left">
+            <h2 class="fw-light">ACSS</h2>
+            <h5 class="fw-light">CLASS OF '94</h5>
+            <p>TEL: 0906 021 6876, +234 802 259 4433, +234 802 361 0903</p>
+            <p>EMAIL: info@acssikeja94.org</p>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-md-6 footer-right">
+            <div class="text-center">
+              <h5 class="fw-light">SOCIALS</h5>
+              <div class="social-icons mt-3">
+                <a href="https://www.facebook.com/share/16D12kNBr8/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      window.onload = function () {
+        alert("Nothing to see here, please go back home");
+        window.location.href = "index.html";
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

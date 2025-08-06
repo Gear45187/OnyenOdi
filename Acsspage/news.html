@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>News & Updates</title>
+    <style>
+      .custom-card {
+        background: #1e3a8a; /* Dark blue background */
+        color: white;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .custom-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .custom-overlay {
+        background: rgba(30, 58, 138, 0.7); /* Semi-transparent overlay */
+        display: flex;
+        align-items: center;
+        padding: 20px;
+      }
+      .custom-btn {
+        background: #3b5998; /* Blue button */
+        border: none;
+        padding: 8px 20px;
+        border-radius: 20px;
+      }
+      .custom-btn:hover {
+        background: #2b4777;
+      }
+      @media (max-width: 768px) {
+        .container {
+        }
+        .container img {
+          width: 60%;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="members.css" />
+    <div id="acsslink">
+      <h2>ARMY CANTONMENT SECONDARY SCHOOL</h2>
+      <h4>CLASS OF '94</h4>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">About</a>
+        <a class="nav-link" href="members.html">Members</a>
+        <div class="dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            aria-current="page"
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            >Blog <i class="fa-solid fa-chevron-down"></i
+          ></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="news.html">News & Updates</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="achievements.html">Achievements</a>
+            </li>
+          </ul>
+        </div>
+        <a class="nav-link" href="donations.html">Donations</a>
+        <a class="nav-link" href="calendar.html">Calendar</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <!-- MOBILE TOGGLE BUTTON (Only Visible on Mobile) -->
+      <div class="mobbar">
+        <button
+          class="btn btn-dark d-lg-none mobile-nav"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileSidebar"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- SIDEBAR (Mobile View) -->
+      <div
+        class="offcanvas offcanvas-start bg-dark text-white"
+        id="mobileSidebar"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li><a class="nav-link text-white" href="index.html">About</a></li>
+            <li>
+              <a class="nav-link text-white" href="members.html">Members</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Blog</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="news.html">News & Updates</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="achievements.html"
+                    >Achievements</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="donations.html">Donations</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="calendar.html">Calendar</a>
+            </li>
+            <li>
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </head>
+  <body>
+    <div class="container text-center text-light py-4">
+      <h2 class="fw-bold">NEWS & UPDATES</h2>
+      <hr class="mx-auto w-50 border-light" />
+      <p class="fst-italic">view all news updates and articles here</p>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="row g-0 custom-card">
+            <div class="col-md-5">
+              <img src="Site_images\IMG-20250513-WA0015.jpg" />
+            </div>
+            <div class="col-md-7 d-flex justify-content-center custom-overlay">
+              <div>
+                <h2 class="fw-bold">BEACH BASH</h2>
+                <p class="mb-3">
+                  The ACSS Class of '94 Beach Bash held has concluded
+                  successfully Details of the events are below
+                </p>
+                <button
+                  class="custom-btn text-white"
+                  onclick="window.location.href='beachbash.html'"
+                >
+                  VIEW<i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <footer class="footer mt-auto">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Left Side -->
+          <div class="col-md-6 footer-left">
+            <h2 class="fw-light">ACSS</h2>
+            <h5 class="fw-light">CLASS OF '94</h5>
+            <p>TEL: 0906 021 6876, +234 802 259 4433, +234 802 361 0903</p>
+            <p>EMAIL: info@acssikeja94.org</p>
+          </div>
+
+          <!-- Right Side -->
+          <div class="col-md-6 footer-right">
+            <div class="text-center">
+              <h5 class="fw-light">SOCIALS</h5>
+              <div class="social-icons mt-3">
+                <a href="https://www.facebook.com/share/16D12kNBr8/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
